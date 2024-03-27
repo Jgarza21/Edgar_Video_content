@@ -1,6 +1,6 @@
 import pandas as pd
 import requests
-from headers import headers  # change to your own headers file or add variable in code
+headers = {"User-Agent": "jacobg0121@gmail.com"}  # change to your own headers file or add variable in code
 
 
 def cik_matching_ticker(ticker, headers=headers):

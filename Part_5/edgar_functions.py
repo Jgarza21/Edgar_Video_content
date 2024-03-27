@@ -5,7 +5,7 @@ import requests
 from bs4 import BeautifulSoup
 import logging  # make sure to add
 import calendar  # make sure to add
-from headers import headers  # change to your own headers file or add variable in code
+headers = {"User-Agent": "jacobg0121@gmail.com"}  # change to your own headers file or add variable in code
 
 pd.options.display.float_format = (
     lambda x: "{:,.0f}".format(x) if int(x) == x else "{:,.2f}".format(x)
